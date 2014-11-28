@@ -1,0 +1,25 @@
+{
+    "name": "processing-queue"
+    , "version": "0.1.1-beta"
+    , "description": "A queue which will call an external process with the arrays placed in it as arguments.  It will call back to a user function with the stdout of the process called."
+    , "keywords": [
+        "queue"
+        , "callback"
+        , "parallel"
+        , "limit"
+        , "process"
+        , "child"
+    ]
+    , "main": "processing-queue"
+    , "homepage" : "https://github.com/frankiethekneeman/node-processing-queue"
+    , "bugs": {
+        "url": "https://github.com/frankiethekneeman/node-processing-queue/issues"
+    }
+    , "dependencies": {
+        "limiting-queue": "0.2.2-beta"
+    }
+    , "author": {
+        "name": "Francis J.. Van Wetering IV"
+        , "email": "fjvanw@thetadelt.com"
+    }
+}
