@@ -1,4 +1,6 @@
 var LimitingQueue = require('limiting-queue')
+    , child_process = require('child_process')
+    ;
 
 /**
  *  Here is where I will document the default values for the various arguments to be passed into this constructor.
@@ -28,8 +30,8 @@ var defaults = {
 module.exports = function ProcessingQueue(opts) {
     this.opts = opts;
     var queue = new LimitingQueue({
-        autoStart: this.opts.autoStart
-        callback: function(payload, previousAttempts, deferred) {
+        autoStart: this.opts.autoStart || true
+        , callback: function(payload, previousAttempts, deferred) {
             var retVal = '';
             var child = child_process.spawn(this.opts.program, payload)
             child.stdout.on('data', function(chunk) {
