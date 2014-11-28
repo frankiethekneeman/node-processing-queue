@@ -10,6 +10,10 @@
         , "process"
         , "child"
     ]
+    , "repository": {
+        "type": "git"
+        , "url": "https://github.com/frankiethekneeman/node-processing-queue"
+    }
     , "main": "processing-queue"
     , "homepage" : "https://github.com/frankiethekneeman/node-processing-queue"
     , "bugs": {
