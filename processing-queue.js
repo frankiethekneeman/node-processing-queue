@@ -139,4 +139,14 @@ module.exports = function ProcessingQueue(opts) {
     this.stop = function() {
         return queue.stop();
     }.bind(this)//stop()
+
+    /**
+     *  Execute a function on each member currently in the queue without removing it from the queue.
+     *  This function is sequential in nature.
+     *  
+     *  @param callback The funciton to be called on each member of the queue.
+     */
+    this.forEach = function(callback) {
+        return queue.forEach(callback);
+    }.bind(this);//forEach(callback)
 };
