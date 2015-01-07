@@ -1,6 +1,6 @@
 {
     "name": "processing-queue"
-    , "version": "1.0.0"
+    , "version": "1.1.0"
     , "description": "A queue which will call an external process with the arrays placed in it as arguments.  It will call back to a user function with the stdout of the process called."
     , "keywords": [
         "queue"
@@ -20,7 +20,7 @@
         "url": "https://github.com/frankiethekneeman/node-processing-queue/issues"
     }
     , "dependencies": {
-        "limiting-queue": "1.0.0"
+        "limiting-queue": "1.1.0"
     }
     , "author": {
         "name": "Francis J.. Van Wetering IV"
